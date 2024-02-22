@@ -109,6 +109,41 @@
           <!-- Add more photos as needed -->
       </div>
   </section>
+  <style>
+    .rating button {
+        background-color: #eee;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .rating button:hover {
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+
+<h3>partie interactive avec pool de notation</h3>
+
+<p>Merci de noter le contenu :</p>
+
+<div class="rating">
+    <button onclick="submitRating(1)">1</button>
+    <button onclick="submitRating(2)">2</button>
+    <button onclick="submitRating(3)">3</button>
+    <button onclick="submitRating(4)">4</button>
+    <button onclick="submitRating(5)">5</button>
+</div>
+
+<script>
+function submitRating(rating) {
+    
+    alert('Merci pour votre note : ' + rating);
+}
+</script>
+  
 <footer>
 <p>CIP : anem1501</p>
     <h2>Changelog</h2>
@@ -120,6 +155,8 @@
         <li>Version 5.0 - [26 Janvier 10:30] : Génération et ajout d'un contenu texte par IA </li>
         <li>Version 6.0 - [26 Janvier 10:41] : Ajout des onglets about et contact avec leurs contenus</li>
         <li>Version 7.0 - [29 Janvier 10:41] : Ajout du sitemap </li>
+        <li>Version 8.0 - [29 Janvier 10:41] : Ajout du rating button pour de l'interactivité dans la page </li>
+
 
 
 
